@@ -1,0 +1,122 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+OrdersController	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^class OrdersController extends CommonController$/;"	class	line:25
+actionIndex	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^	public function actionIndex(){$/;"	function	line:27
+actionList	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^	public function actionList( $page = 1 ){$/;"	function	line:33
+page	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^	public function actionList( $page = 1 ){$/;"	variable	line:33
+type	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$type = Yii::$app->request->get('type') or $type = 1;  \/\/帮助页面 1为 提供者， 2为接受者$/;"	variable	line:35
+model	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^					$model = Payhelp::find()->select(['pay_id'])->where(['status' => 1]);$/;"	variable	line:40
+id	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^					$id    = 'pay_id';$/;"	variable	line:43
+model	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^					$model = Gethelp::find()->select(['get_id'])->where(['status' => 1]);$/;"	variable	line:45
+id	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^					$id    = 'get_id';$/;"	variable	line:46
+status	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$status[] = Yii::$app->request->get('status') or $status = [1];  \/\/ 1 为匹配中 2为待~~$/;"	variable	line:48
+query	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$query    = Orders::find()->where([$id => $model,'status' => $status]);$/;"	variable	line:49
+status	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$status = Yii::$app->request->get('status');$/;"	variable	line:53
+query	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$query = Orders::find();$/;"	variable	line:54
+status	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				if( $status == 1 ){$/;"	variable	line:55
+query	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$query = Orders::find()->where(['in' ,'status',[1,2,3]]);$/;"	variable	line:64
+status	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$status = Yii::$app->request->get('status');$/;"	variable	line:68
+query	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$query = Orders::find()->where(['status' => $status]);$/;"	variable	line:69
+t1	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^			$t1 = Yii::$app->request->get('time1');$/;"	variable	line:73
+t2	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^			$t2 = Yii::$app->request->get('time2');$/;"	variable	line:74
+starTime	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^			$starTime =  strtotime("$t1-$t2-1 00:00:00");$/;"	variable	line:75
+endTime	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^			$endTime  =  strtotime("$t1-$t2-1 00:00:00 +1 month")-1;$/;"	variable	line:76
+provider	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$provider = new ActiveDataProvider([$/;"	variable	line:83
+actionSearch	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^	public function actionSearch(){$/;"	function	line:98
+id	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$id = Yii::$app->request->post('id');$/;"	variable	line:99
+order	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$order = Orders::findOne( $id );$/;"	variable	line:100
+money	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^			$money = $order->money;$/;"	variable	line:102
+type	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$type    = 'pay_id';$/;"	variable	line:105
+id	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$id = $order->pay->user_id;$/;"	variable	line:106
+whe	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$whe = Gethelp::find()->select(['get_id'])->where(['status' => 1, 'user_id' => $id]);$/;"	variable	line:107
+where	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$where   = ['not in' , 'get_id', $whe];$/;"	variable	line:108
+id	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$id = $order->get->user_id;$/;"	variable	line:111
+whe	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$whe = Payhelp::find()->select(['pay_id'])->where(['status' => 1, 'user_id' => $id]);$/;"	variable	line:112
+type	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$type    = 'get_id';$/;"	variable	line:113
+where	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$where   = ['not in' , 'pay_id', $whe];$/;"	variable	line:114
+model	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^			$model = Orders::find()->where([ $type => 0, 'money' => $money])->andWhere($where)->all();$/;"	variable	line:119
+actionMatch	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^	public function actionMatch(){$/;"	function	line:131
+data	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$data = Yii::$app->request->post();$/;"	variable	line:133
+model1	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^  			$model1 = Orders::findOne( $data['one'] );$/;"	variable	line:137
+model2	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^  			$model2 = Orders::findOne( $data['two'] );$/;"	variable	line:138
+return	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^  			$return = $this->matchd($model1, $model2);$/;"	variable	line:139
+matchd	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^	private function matchd($model1, $model2){$/;"	function	line:147
+type	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^			$type  = $model1->get_id == 0 ? 'pay_id' : 'get_id';$/;"	variable	line:150
+connection	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^			$connection = Yii::$app->db;$/;"	variable	line:151
+transaction	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^			$transaction = $connection->beginTransaction();$/;"	variable	line:152
+new	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		        $new = new Orders();$/;"	variable	line:154
+type	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		        if( $type === 'pay_id' ){$/;"	variable	line:157
+actionSplit	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^	public function actionSplit(){$/;"	function	line:185
+data	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$data = Yii::$app->request->post();$/;"	variable	line:188
+model	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$model = Orders::findOne($data['id']);$/;"	variable	line:197
+connection	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$connection = Yii::$app->db;$/;"	variable	line:202
+transaction	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$transaction = $connection->beginTransaction();$/;"	variable	line:203
+order	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^						$order = new Orders();$/;"	variable	line:206
+actionSearchCombine	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^	public function actionSearchCombine(){$/;"	function	line:234
+id	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$id = Yii::$app->request->post('id');  \/\/传输过来的 id$/;"	variable	line:236
+old	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$old  = Orders::findOne($id);$/;"	variable	line:238
+type	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^			$type = $old->get_id == 0 ? 'pay_id' : 'get_id';$/;"	variable	line:240
+new	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^			$new  = Orders::find()->where([$type => $old->$type, 'status' => 1])->andWhere(['!=', 'mate_id', $old->mate_id])->all();$/;"	variable	line:241
+actionCombine	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^	public function actionCombine(){$/;"	function	line:252
+data	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$data = Yii::$app->request->post();$/;"	variable	line:253
+model1	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^  			$model1 = Orders::findOne( $data['one'] );$/;"	variable	line:257
+model2	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^  			$model2 = Orders::findOne( $data['two'] );$/;"	variable	line:258
+connection	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^  				$connection = Yii::$app->db;$/;"	variable	line:260
+transaction	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$transaction = $connection->beginTransaction();$/;"	variable	line:261
+new	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^					$new = new Orders();$/;"	variable	line:263
+actionDelorder	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^	public function actionDelorder(){$/;"	function	line:293
+id	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$id = Yii::$app->request->post('id');$/;"	variable	line:294
+order	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$order = Orders::findOne($id);$/;"	variable	line:300
+actionRules	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^	public function actionRules(){$/;"	function	line:314
+session	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^			$session = Yii::$app->session;$/;"	variable	line:317
+get	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$get = GethelpRule::findOne(1);$/;"	variable	line:324
+pay	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$pay = PayhelpRule::findOne(1);$/;"	variable	line:325
+tj	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$tj  = BonusType::findOne(1);$/;"	variable	line:326
+jl	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$jl  = BonusType::findOne(2);$/;"	variable	line:327
+tt	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$tt  = JihuoPrompt::findOne(1);$/;"	variable	line:328
+data	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^			$data = Yii::$app->request->post();$/;"	variable	line:330
+bon	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$bon = BonusType::findOne($data['BonusType']['bonus_type_id']);$/;"	variable	line:347
+actionExcel	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^	public function actionExcel(){$/;"	function	line:365
+title	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$title  = [$/;"	variable	line:366
+data	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^        $data = Yii::$app->request->get('data');$/;"	variable	line:369
+data	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^	        $data = json_decode($data ,true);$/;"	variable	line:371
+excel	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^	        $excel = new Excel();$/;"	variable	line:373
+actionOrderlist	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^	public function actionOrderlist( $id ){$/;"	function	line:380
+get	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$get = Gethelp::find()->select('get_id')->where(['user_id'=>$id])->asArray()->all();$/;"	variable	line:381
+pay	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$pay = Payhelp::find()->select('pay_id')->where(['user_id'=>$id])->asArray()->all();$/;"	variable	line:382
+aa	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$aa = array_merge(array_values($get),array_values($pay));$/;"	variable	line:383
+bb	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$bb = [];$/;"	variable	line:384
+query	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^        $query = Orders::find()->where(['in', 'get_id' , $bb])->orwhere(['in', 'pay_id' , $bb])$/;"	variable	line:386
+provider	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^        $provider = new ActiveDataProvider([$/;"	variable	line:388
+actionAgain	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^    public function actionAgain(){$/;"	function	line:403
+id	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$id  = Yii::$app->request->post('id');$/;"	variable	line:405
+old	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$old = Orders::findOne($id);$/;"	variable	line:406
+connection	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^					$connection = Yii::$app->db;$/;"	variable	line:411
+transaction	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^					$transaction = $connection->beginTransaction();$/;"	variable	line:412
+pay_id	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^						$pay_id = $old->pay_id;$/;"	variable	line:414
+new	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^						$new = new Orders();$/;"	variable	line:416
+connection	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^					$connection = Yii::$app->db;$/;"	variable	line:436
+transaction	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^					$transaction = $connection->beginTransaction();$/;"	variable	line:437
+pay	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^						$pay = Payhelp::findOne($old->pay->pay_id);$/;"	variable	line:440
+user	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^						$user = User::findOne($old->get->user_id);$/;"	variable	line:445
+pay_id	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^						$pay_id = $old->pay_id;$/;"	variable	line:457
+new	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^						$new = new Orders();$/;"	variable	line:459
+actionAutosearch	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^    public function actionAutosearch(){$/;"	function	line:497
+aa	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^    	$aa = Orders::find()->select('get_id')->where(['status' => 1, 'pay_id' => 0])->asArray()->all();$/;"	variable	line:498
+bb	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^    	$bb = Orders::find()->select('pay_id')->where(['status' => 1, 'get_id' => 0])->asArray()->all();$/;"	variable	line:499
+get	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^    	$get = [];$/;"	variable	line:500
+pay	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^    	$pay = [];$/;"	variable	line:501
+good	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^    	$good = []; \/\/存储匹配好的订单$/;"	variable	line:506
+k	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^    	foreach($get as $k => $v){$/;"	variable	line:507
+order	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^    		$order = Orders::findOne(['get_id' => $v]);$/;"	variable	line:508
+pays	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^    			$pays  = Orders::find()->where(['pay_id' => $vv, 'money' => $order->money])->one();$/;"	variable	line:511
+actionAutomatch	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^    public function actionAutomatch(){$/;"	function	line:527
+data	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^		$data = Yii::$app->request->post('val');$/;"	variable	line:529
+res	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^			$res = explode(',', $value);$/;"	variable	line:533
+model1	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$model1 = Orders::findOne( $res[0] );$/;"	variable	line:535
+model2	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$model2 = Orders::findOne( $res[1] );$/;"	variable	line:536
+return	E:\wamp\www\huhui_back\controllers\OrdersController.php	/^				$return = $this->matchd($model1, $model2);$/;"	variable	line:537

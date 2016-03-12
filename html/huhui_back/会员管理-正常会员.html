@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="renderer" content="webkit">
+
+    <title>首页</title>
+    <meta name="keywords">
+    <meta name="description">
+
+    <link href="css/bootstrap.min.css?v=3.4.0" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css?v=4.3.0" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=2.2.0" rel="stylesheet">
+    <link rel="stylesheet" href="css/h_style.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+       
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+           
+            
+            <div class="wrapper wrapper-content animated fadeIn">
+               
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel blank-panel">
+
+                            <div class="panel-heading">
+                                <div class="panel-title m-b-md">
+                                    <h4>正常会员</h4>
+                                </div>
+                                 <p> 
+                                                             
+                                    <div class="input-group h_search">
+                                        <input type="text" placeholder="请输入关键词" class="input-sm form-control"> <span class="input-group-btn">
+                                        <button type="button" class="btn btn-sm btn-primary"> 搜索</button> </span>
+                                    </div>
+
+                                    <b class="h_title">帮助类型:</b>                                                  
+                                    <select class="input-sm form-control input-s-sm inline h_slect" >
+                                        <option value="0">提供帮助</option>
+                                        <option value="1">接受帮助</option>
+                                    </select>
+
+                                    <b class="h_title">等级：</b>                                                  
+                                    <select class="input-sm form-control input-s-sm inline h_slect" >
+                                        <option value="0">VIP会员</option>
+                                        <option value="1">黄金会员</option>
+                                        <option value="1">铂金会员</option>
+                                        <option value="1">钻石会员</option>
+                                    </select>
+                                    
+
+                                    <b class="h_title">激活:</b>                                                  
+                                    <select class="input-sm form-control input-s-sm inline h_slect" style="width:6%;" >
+                                        <option value="0">是</option>
+                                        <option value="1">否</option>
+                                        <option value="1">等待受方付款</option>
+                                    </select>
+                                    
+                                  
+                                    <button type="button" class="btn btn-primary btn-sm">导出表格</button>          
+                                </p>
+                                 <div class="table-responsive" style="border:1px solid #ddd;">
+                                    <table class="table table-striped h_table">
+                                        <thead>
+                                            <tr>
+
+                                                <th>编号</th>
+                                                <th>会员用户名</th>
+                                                <th>姓名</th>
+                                                <th>推荐人</th>
+                                                <th>金币</th>
+                                                <th>注册时间</th>
+                                                <th>注册IP</th>
+                                                <th>相同IP</th>
+                                                <th>等级</th>
+                                                <th>激活</th>
+                                                <th>操作</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>12345678952585</td>
+                                                <td><a href="#">sfsdgf</a></td>
+                                                <td>haahah</td>
+                                                <td><a href="#">鼠大王</a></td>
+                                                <td>225</td>
+                                                <td>2015-2-5</td>
+                                                <td>广东 广州 天河区</td>
+                                                <td>5</td>
+                                                <td>VIP会员</td>
+                                                <td>否</td>
+                                                <td>
+                                                    <a class="btn btn-primary tan1" href="javascript:;">修改</a>
+                                                    <a class="btn btn-info tan3" href="javascript:;">登入</a>
+                                                    <a class="btn btn-success " href="buttons.html#">查看交易明细表</a>
+                                                </td>
+                                            </tr>
+                                           
+                                        </tbody>
+                                    </table>
+
+                                    <div class="pages" style="width:80%;margin:0 auto;text-align: center;">
+                                        <div class="btn-group" style="margin:10px auto;">
+                                            <a href="#" class="btn btn-white"><<i class="fa fa-chevron-left"></i>
+                                            </a>
+                                            <a href="#"class="btn btn-white">1</a>
+                                            <a href="#"class="btn btn-white  active">2</a>
+                                            <a href="#"class="btn btn-white">3</a>
+                                            <a href="#"class="btn btn-white">4</a>
+                                            <a href="#" class="btn btn-white">><i class="fa fa-chevron-right"></i> 
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                           
+
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+               
+
+              
+            </div>
+            <div class="footer">
+                <div class="pull-right">
+                    By：<a href="http://www.zi-han.net" target="_blank">zihan's blog</a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> H+ &copy; 2014
+                </div>
+            </div>
+
+            <!-- 弹窗 -->
+                <div class="theme-popover-mask" ></div><!-- 遮罩 -->
+
+                <!-- 修改弹框内容 -->
+                <div class="pop them1" style="height:auto;padding-bottom:3rem;width:50%;">
+                    <div class="pop_title pr">修改<span class="close "></span></div>
+                   
+                    <div class="pop_all">
+                          <div class="row">
+                            <div class="col-lg-12">
+                                <div class="ibox float-e-margins">
+                                    
+                                    <div class="ibox-content" >
+                                        <form method="get" class="form-horizontal" style="width:50%;float:left;">
+                                            <div class="form-group">
+                                                <label class="col-lg-4 control-label">会员用户名：</label>
+                                                <div class="col-lg-3">
+                                                    <p class="form-control-static">ajhqw</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">姓名：</label>
+                                                <div class="col-sm-5">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">金币：</label>
+                                                <div class="col-sm-5">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-lg-4 control-label">推荐人：</label>
+                                                <div class="col-lg-5">
+                                                    <p class="form-control-static"><a href="#">鼠打王</a></p>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-lg-4 control-label">注册时间：</label>
+                                                <div class="col-lg-5">
+                                                    <p class="form-control-static">2016-1-3</p>
+                                                </div>
+                                            </div>
+
+                                             <div class="form-group">
+                                                <label class="col-lg-4 control-label">注册IP：</label>
+                                                <div class="col-lg-5">
+                                                    <p class="form-control-static">广东  广州</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-lg-4 control-label">相同IP：</label>
+                                                <div class="col-lg-5">
+                                                    <p class="form-control-static">5</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">电话：</label>
+                                                <div class="col-sm-5">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                           
+                                            
+                                        </form>
+                                         <form method="get" class="form-horizontal" style="width:50%;float:left;">
+                                            <div class="form-group">
+                                                <label class="col-lg-4 control-label">微信号：</label>
+                                                 <div class="col-sm-5">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">支付宝：</label>
+                                                <div class="col-sm-5">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">银行账号：</label>
+                                                <div class="col-sm-5">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">开户银行：</label>
+                                                <div class="col-sm-5">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">开户名：</label>
+                                                <div class="col-sm-5">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                             <div class="form-group">
+                                                <label class="col-sm-4 control-label">银行账号2：</label>
+                                                <div class="col-sm-5">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">开户银行2：</label>
+                                                <div class="col-sm-5">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">开户名2：</label>
+                                                <div class="col-sm-5">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                             <div class="form-group">
+                                                <label class="col-lg-4 control-label">登录密码：</label>
+                                                <div class="col-lg-5">
+                                                    <p class="form-control-static"><a href="javascript:;" class="tan2">重置</a></p>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-lg-4 control-label">交易密码：</label>
+                                                <div class="col-lg-5">
+                                                    <p class="form-control-static"><a href="javascript:;" class="tan2">重置</a></p>
+                                                </div>
+                                            </div>
+
+                                             <div class="form-group">
+                                                <label class="col-lg-4 control-label">等级：</label>
+                                                <div class="col-lg-5">
+                                                        <select class="form-control">
+                                                            <option>VIP会员</option>
+                                                            <option>黄金会员</option>
+                                                            <option>铂金会员</option>
+                                                           
+                                                        </select>
+                                                </div>                            
+                                                  
+                                                
+                                            </div>
+
+                                            
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <p class="h_btns">
+                            <button type="button" class="btn btn-w-m btn-default cancle">取消</button>                        
+                            <button type="button" class="btn btn-w-m btn-primary">确定</button>                           
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 修改弹框内容 -->
+
+                 <!-- 重置密码弹框内容 -->
+                <div class="pop them2" style="top:50%;padding-bottom:3rem;">
+                    <div class="pop_title pr">重置密码<span class="close "></span></div>
+                   
+                    <div class="pop_all">
+                         <div class="ibox-content" >
+                            <form method="get" class="form-horizontal" >
+                                                                          
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">新密码：</label>
+                                    <div class="col-sm-5">
+                                        <input type="password" class="form-control">
+                                    </div>
+                                </div>
+                                                                                                                
+                            </form>
+                                                     
+                        </div>       
+                        <p class="h_btns">
+                            <button type="button" class="btn btn-w-m btn-default cancle">取消</button>                        
+                            <button type="button" class="btn btn-w-m btn-primary">确定</button>                           
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 重置密码弹框内容 -->
+
+                <!-- 输入封号理由弹框内容 -->
+                <div class="pop them3" style="top:30%;padding-bottom:3rem;width:20%;margin-left:-10%;">
+                    <div class="pop_title pr">请输入封号理由<span class="close "></span></div>
+                   
+                    <div class="pop_all">
+                        <textarea class="h_chai"></textarea>       
+                        <p class="h_btns">
+                            <button type="button" class="btn btn-w-m btn-default cancle">取消</button>                        
+                            <button type="button" class="btn btn-w-m btn-primary">确定</button>                           
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 输入封号理由弹框内容 -->
+
+               
+            <!-- 弹窗 -->
+
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js?v=3.4.0"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/hplus.js?v=2.2.0"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <script src="js/tan.js"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script><!--统计代码，可删除-->
+    <script>
+        $("body").on('click', '.tan1', function(event) {
+            pop_Up1();
+        });
+         $("body").on('click', '.tan2', function(event) {
+            pop_Up2();
+            $(".them1").hide();
+        });
+          $("body").on('click', '.tan3', function(event) {
+            pop_Up3();
+        });
+    </script>
+</body>
+
+</html>

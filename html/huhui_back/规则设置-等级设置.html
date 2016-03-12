@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="renderer" content="webkit">
+
+    <title>首页</title>
+    <meta name="keywords">
+    <meta name="description">
+
+    <link href="css/bootstrap.min.css?v=3.4.0" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css?v=4.3.0" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=2.2.0" rel="stylesheet">
+    <link rel="stylesheet" href="css/h_style.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+       
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+           
+            
+            <div class="wrapper wrapper-content animated fadeIn">
+               
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel blank-panel">
+
+                            <div class="panel-heading">
+                                <div class="panel-title m-b-md">
+                                    <h4>等级设置</h4>
+                                </div>
+                                 <p> 
+                                                                                               
+                                     <a class="btn btn-primary tan1" href="规则设置-新增等级.html">新增等级</a>          
+                                </p>
+                                 <div class="table-responsive" style="border:1px solid #ddd;">
+                                    <table class="table table-striped h_table">
+                                        <thead>
+                                            <tr>
+
+                                                <th>等级名称</th>
+                                                <th>投资额度（元以上）</th>
+                                                <th>推荐人数</th>
+                                                <th>佣金类别</th>
+                                                <th>可获得佣金代数</th>
+                                                <th>如下级一个会员投资额度减少，对该会员的佣金减少额度（%）</th>
+                                                <th>月投资金额减少，扣除本月佣金奖励</th>                                               
+                                                <th>操作</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>VIP会员</td>
+                                                <td>0</td>
+                                                <td>8</td>
+                                                <td>推荐奖金</td>
+                                                <td>1</td>
+                                                <td>0</td>
+                                                <td>否</td>
+                                               
+                                                <td>
+                                                    <a class="btn btn-primary tan1" href="javascript:;">修改</a>
+                                                    <a class="btn btn-default " href="javascript:;">删除</a>
+                                                   
+                                                </td>
+                                            </tr>
+                                           
+                                        </tbody>
+                                    </table>
+
+                                    <div class="pages" style="width:80%;margin:0 auto;text-align: center;">
+                                        <div class="btn-group" style="margin:10px auto;">
+                                            <a href="#" class="btn btn-white"><<i class="fa fa-chevron-left"></i>
+                                            </a>
+                                            <a href="#"class="btn btn-white">1</a>
+                                            <a href="#"class="btn btn-white  active">2</a>
+                                            <a href="#"class="btn btn-white">3</a>
+                                            <a href="#"class="btn btn-white">4</a>
+                                            <a href="#" class="btn btn-white">><i class="fa fa-chevron-right"></i> 
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                           
+
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+               
+
+              
+            </div>
+           
+
+            <!-- 弹窗 -->
+                <div class="theme-popover-mask" ></div><!-- 遮罩 -->
+
+                <!-- 修改弹框内容 -->
+                <div class="pop them1" style="height:auto;padding-bottom:3rem;width:50%;">
+                    <div class="pop_title pr">修改<span class="close "></span></div>
+                   
+                    <div class="pop_all">
+                         
+
+                         <p class="h_btns">
+                            <button type="button" class="btn btn-w-m btn-default cancle">取消</button>                        
+                            <button type="button" class="btn btn-w-m btn-primary">确定</button>                           
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 修改弹框内容 -->
+
+
+             
+               
+            <!-- 弹窗 -->
+
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js?v=3.4.0"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/hplus.js?v=2.2.0"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <script src="js/tan.js"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script><!--统计代码，可删除-->
+    <script>
+        $("body").on('click', '.tan1', function(event) {
+            pop_Up1();
+        });
+        
+    </script>
+</body>
+
+</html>
