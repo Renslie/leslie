@@ -29,6 +29,7 @@ class AdminController extends CommonController
 		        ]
 		    ],
 		]);
+        //test
 		$listRoles = ArrayHelper::getColumn(Yii::$app->authManager->getRoles(), 'name');
 		return $this->render('index',['provider' => $provider,'model'=>new Admin(['scenario' => 'user']),'list' => $listRoles]);
 	}
